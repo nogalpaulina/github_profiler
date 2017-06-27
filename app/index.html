@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Github Profiler</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700" rel="stylesheet">
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body class="grey lighten-4">
+	<div class="container">
+		 
+		 <div class="fixed-action-btn horizontal">
+			<a class="btn-floating btn-large light-blue darken-1">
+				<i class="large material-icons">menu</i>
+			</a>
+			<ul class="menu">
+				<li><a href="#/profile" class="btn-floating light-blue darken-1"><i class="material-icons">assignment_ind</i>Profile</a></li>
+				<li><a href="#/about" class="btn-floating light-blue darken-1"><i class="material-icons">assignment</i>About</a></li>
+			</ul>
+		</div>
+
+		<div ng-view></div>
+		 
+	</div>
+	
+	<div class="footer-copyright valign-wrapper light-blue darken-4">
+		<div class="container">
+			&copy; <span id="current-year"></span>
+			<a class="right" href="www.paulinanogal.com">See my online portfolio</a>
+		</div>
+	</div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+	
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="profile/profile.js"></script>
+  <script src="about/about.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+	<script src="bower_components/countup.js/dist/countUp.min.js"></script>
+	<script src="bower_components/countup.js/dist/angular-countUp.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+	<script src="bower_components/angular-chart.js/Chart.js"></script>
+	<script src="bower_components/angular-chart.js/dist/angular-chart.min.js"></script>
+</body>
+</html>

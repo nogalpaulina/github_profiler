@@ -1,0 +1,187 @@
+/* app css stylesheet */
+
+html {
+	font-family: 'Josefin Sans', sans-serif !important;
+}
+
+body {
+	color: #01579b;
+	min-height: 98vh;
+	background-image: url(/images/background-pattern.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.row {
+	margin-bottom: 0px !important;
+}
+
+/*********
+TYPOGRAPHY
+*********/
+h1 {
+	font-size: 36px !important;
+	font-weight: 700 !important;
+}
+
+/***********
+MENU STYLES
+***********/
+
+.fixed-action-btn {
+	top: 1em;
+}
+
+.fixed-action-btn ul {
+	right: -8px !important;
+	top: 60% !important;
+}
+
+.fixed-action-btn li {
+	display: block !important;
+}
+
+/******************
+PROFILER PAGE STYES
+******************/
+
+.panel-top {
+	min-height: 225px;
+}
+
+#left-info-col {
+	padding-left: 0px;
+}
+
+#profile-image {
+	max-width: 100%;
+}
+
+.card {
+	background-color: rgba(250, 250, 250, 0.9) !important;
+}
+
+.chip {
+	cursor: pointer;
+}
+
+#profile-info i {
+	font-size: 16px;
+	position: relative;
+	bottom: -3px;
+}
+
+#github-profiler,
+#about-github-profiler {
+	background-color: rgba(250, 250, 250, 0.9);
+	border-radius: 3px;
+}
+
+.image-wrapper {
+	padding: 0px !important;
+}
+
+#statistic-section {
+	margin: 3em auto 1em;
+}
+
+.single-statistic {
+	text-align: center;
+}
+
+.count-up {
+	font-size: 60px;
+	line-height: 1;
+	display: block;
+}
+
+#chart-pie {
+	margin-top: 0.8em;
+}
+
+#followers-section {
+	margin-top: 2em;
+	margin-bottom: 4em;
+	text-align: center;
+}
+
+#pie {
+	width: 100% !important;
+	height: auto !important;
+}
+
+/***************
+ABOUT PAGE STYES
+***************/
+
+#about-github-profiler {
+	margin-top: 0.5em;
+	min-height: 92.5vh;
+	padding: 1em;
+}
+
+/******************
+SEARCH INPUT STYLES
+******************/
+
+#search {
+	cursor: pointer;
+	position: absolute;
+	top: 15px;
+	right: 10px;
+}
+
+#search i {
+	font-size: 26px;
+	color: #00acc1;
+}
+
+.input-field {
+	position: relative;
+}
+
+input[type=text]:focus {
+	border-bottom: 1px solid #00acc1 !important;
+	box-shadow: 0 1px 0 0 #00acc1 !important;
+}
+
+/***********
+FOOTER STYES
+************/
+
+.footer-copyright {
+	position: fixed;
+	bottom: 0px;
+	min-height: 30px;
+	color: #ffffff;
+	width: 100%;
+}
+
+.footer-copyright a {
+	color: #ffffff;
+}
+
+/************
+MEDIA QUERIES
+*************/
+
+@media screen and (max-width: 660px) {
+	
+	.fixed-action-btn {
+		top: 8em;
+	}
+	
+	#left-info-col {
+		display: block;
+	}
+	
+	.image-wrapper,
+	#profile-info {
+		text-align: center;
+	}
+	
+	.image-wrapper, #left-info-col {
+		padding-right: 0px;
+	}
+}
