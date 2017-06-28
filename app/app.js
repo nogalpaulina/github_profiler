@@ -10,11 +10,10 @@ angular.module('myApp', [
   'myApp.profile',
   'myApp.about',
   'myApp.version',
-	'countUpModule',
-	'chart.js'
+  'countUpModule',
+  'chart.js'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-	
+
   $routeProvider.otherwise({redirectTo: '/profile'});
 }]);
-
